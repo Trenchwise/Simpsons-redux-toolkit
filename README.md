@@ -60,3 +60,5 @@ this.props.dispatch({type: "INCREMENT"})
 export default App;
 
 What this component does is it subcribes the data from the store and its able to send messages to the store to say that the data needs to be changed. This component doesn't hold state or logic. Its only job is to tell the store to change data and display data which it has extracted from the store.
+
+test
