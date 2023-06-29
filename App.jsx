@@ -5,6 +5,7 @@ import Simpsons from "./components/Simpsons";
 // import Search from "./components/Search";
 import "./App.css";
 import { validate } from "./validation";
+import { connect } from "react-redux";
 
 const App = () => {
   const [simpsons, setSimpsons] = useState(); //The box that holds the data
@@ -102,4 +103,8 @@ const onInput = async (e) => {
   );
 };
 
-export default App;
+function mapStateToProps(state) {
+  return {};
+}
+
+export default connect(mapStateToProps)(App);
